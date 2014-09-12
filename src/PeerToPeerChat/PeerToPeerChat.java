@@ -1,4 +1,4 @@
-package peer.to.peer.chat;
+package PeerToPeerChat;
 
 public class PeerToPeerChat {
 
