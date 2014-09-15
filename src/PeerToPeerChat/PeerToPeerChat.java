@@ -20,7 +20,9 @@ public class PeerToPeerChat {
         return peerTable;
     }
 
-    public void sendMessage(String input){
+    //String destination can designate who to send it to, listed out as option
+    //a, b, c etc. where each letter stands for a recipient.
+    public void sendMessage(String input, String destination){
     
     }
     
