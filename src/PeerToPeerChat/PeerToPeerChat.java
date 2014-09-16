@@ -13,7 +13,7 @@ public class PeerToPeerChat {
         DatagramSocket clientSocket = new DatagramSocket();
         InetAddress IPAddress = InetAddress.getByName("localhost");
     }
-    
+
     public boolean connect(String ipAddress){
         return true;
     }
