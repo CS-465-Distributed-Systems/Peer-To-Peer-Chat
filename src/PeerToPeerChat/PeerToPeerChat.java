@@ -7,9 +7,11 @@ public class PeerToPeerChat {
 
     private String[] peerTable;
 
+
+
     public static void main(String[] args) throws IOException {
         DatagramSocket serverSocket = new DatagramSocket(9876);
-        BufferedReader inFromUser = new BufferReader(new InputStreamReader(System.in));
+        BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
         DatagramSocket clientSocket = new DatagramSocket();
         InetAddress IPAddress = InetAddress.getByName("localhost");
     }
@@ -28,8 +30,29 @@ public class PeerToPeerChat {
 
     //String destination can designate who to send it to, listed out as option
     //a, b, c etc. where each letter stands for a recipient.
+
+    //temporary input for testing, etc...
+
+
+
+
+
+    int port = 8080;
+
     public void sendMessage(String input, String destination){
+
+        try
+
+        {
+            InetAddress IPAddress = InetAddress.getByName("192.168.0.1");
+
+        } catch (UnknownHostException e) {
+
+            e.printStackTrace();
+        }
+
         byte[] sendData = new byte[1024];
+        String sentence = "";
         sendData = sentence.getBytes();
         DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, port);
         serverSocket.send(sendPacket);
