@@ -7,7 +7,7 @@ public class PeerToPeerChat {
 
     private String[] peerTable;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         DatagramSocket serverSocket = new DatagramSocket(9876);
         BufferedReader inFromUser = new BufferReader(new InputStreamReader(System.in));
         DatagramSocket clientSocket = new DatagramSocket();

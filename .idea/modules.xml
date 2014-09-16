@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
+<<<<<<< HEAD
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Peer-To-Peer-Chat.iml" filepath="$PROJECT_DIR$/Peer-To-Peer-Chat.iml" />
     </modules>
+=======
+    <modules />
+>>>>>>> FETCH_HEAD
   </component>
 </project>
 
